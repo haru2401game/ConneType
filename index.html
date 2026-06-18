@@ -3,216 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Connection Established</title>
 
-<style>
-body{
-    background-color:#000;
-    color:#00ff88;
-    font-family:Consolas, monospace;
-    margin:0;
-    overflow-x:hidden;
-}
+<title>ConneType Network</title>
 
-.container{
-    width:80%;
-    margin:80px auto;
-}
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 
-.line{
-    opacity:0;
-    margin:15px 0;
-    font-size:1.3rem;
-    animation:show 0.5s forwards;
-}
-
-.line:nth-child(1){animation-delay:0s;}
-.line:nth-child(2){animation-delay:0.5s;}
-.line:nth-child(3){animation-delay:1s;}
-.line:nth-child(4){animation-delay:1.5s;}
-.line:nth-child(5){animation-delay:2s;}
-.line:nth-child(6){animation-delay:2.5s;}
-.line:nth-child(7){animation-delay:3s;}
-.line:nth-child(8){animation-delay:3.5s;}
-.line:nth-child(9){animation-delay:4s;}
-.line:nth-child(10){animation-delay:4.5s;}
-.line:nth-child(11){animation-delay:5s;}
-.line:nth-child(12){animation-delay:5.5s;}
-.line:nth-child(13){animation-delay:6s;}
-.line:nth-child(14){animation-delay:6.5s;}
-.line:nth-child(15){animation-delay:7s;}
-.line:nth-child(16){animation-delay:7.5s;}
-
-@keyframes show{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
-.cursor{
-    animation:blink 1s infinite;
-}
-
-@keyframes blink{
-    50%{
-        opacity:0;
-    }
-}
-
-a{
-    color:#00ffff;
-    text-decoration:none;
-}
-
-a:hover{
-    color:white;
-}
-
-.title{
-    font-size:2.5rem;
-    margin-bottom:50px;
-}
-
-.message{
-    margin-top:50px;
-    color:white;
-}
-
-.section{
-    margin-top:60px;
-    margin-bottom:30px;
-    font-size:2rem;
-    color:white;
-    border-bottom:2px solid #00ff88;
-    padding-bottom:10px;
-}
-
-.name{
-    color:white;
-}
-
-.role{
-    color:#00ff88;
-}
-
-.system{
-    color:#888;
-    font-size:1rem;
-}
-
-.message{
-    margin-top:80px;
-    color:white;
-    font-size:1.6rem;
-}
-
-.small{
-    font-size:1.1rem;
-}
-
-.title{
-    font-size:3.5rem;
-    color:white;
-    margin-bottom:50px;
-}
-
-.link{
-    color:#00ffff;
-}
-
-.link:hover{
-    color:white;
-}
-</style>
 </head>
 
 <body>
 
 <div class="container">
 
-<div class="line title">
-> CONNECTION ESTABLISHED
+<div id="clock"></div>
+
+<div class="fade-in title">
+    > CONNECTION ESTABLISHED
 </div>
 
-<div class="line title">
-WELCOME
+<div class="fade-in subtitle">
+    ようこそ
 </div>
 
-<div class="line">
-> このページは「ConneType」をクリアした人だけがアクセスできます。
+<div class="fade-in line">
+    > このページは「ConneType」をクリアした人だけがアクセスできます。
 </div>
 
-<div class="line">
-> Thanks for playing.
+<div class="fade-in system">
+    > 認証成功
 </div>
 
-<div class="line section">
-TEAM INFORMATION
+<div class="fade-in system">
+    > 接続を確認しました
 </div>
 
-<div class="line">
-<span class="name">Leader / Programming : Nagaya</span>
+<div class="fade-in system">
+    > プレイしていただきありがとうございます
 </div>
 
-<div class="line">
-<span class="role">Programming</span>
-:
-<span class="name">Tada</span>
-</div>
 
-<div class="line">
-<span class="role">Programming</span>
-:
-<span class="name">Watanabe</span>
+<div class="fade-in section">
+    TEAM INFORMATION
 </div>
 
 <div class="line">
-<span class="role">Programming</span>
-:
-<span class="name">Hamanishi</span>
+    制作メンバーについて
 </div>
 
-<div class="line section">
-NETWORK LINKS
-</div>
-
-<div class="line">
-<span class="role">ブログ</span>
-:
-<a class="link"
-href="https://note.com/ha_03ru_01"
-target="_blank">
-note.com/ha_03ru_01
+<a class="button" href="team.html">
+    チーム紹介を見る
 </a>
+
+
+<div class="section">
+    NETWORK LINKS
 </div>
 
 <div class="line">
-<span class="role">Youtube</span>
-:
-<a class="link"
-href="https://www.youtube.com/@haru_game2401"
-target="_blank">
-youtube.com/@haru_game2401
+    SNSや活動ページ
+</div>
+
+<a class="button" href="links.html">
+    リンクを開く
 </a>
+
+
+<div class="section">
+    SYSTEM LOG
 </div>
 
 <div class="line">
-<span class="role">X</span>
-:
-<a class="link"
-href="https://x.com/haru2401game"
-target="_blank">
-x.com/@haru2401game
+    ConneTypeの接続ログ
+</div>
+
+<a class="button" href="logs.html">
+    ログを見る
 </a>
+
+
+<div class="section">
+    SECRET DATA
 </div>
 
-<div class="line message">
-Welcome to ConneType's Network<span class="cursor">_</span>
+<div class="line warning">
+    警告：制限された領域です
 </div>
 
+<a class="button" href="secret.html">
+    アクセスする
+</a>
+
+
+<hr>
+
+
+<div class="message">
+    ConneTypeのネットワークへようこそ<span class="cursor">_</span>
+</div>
 </div>
 
 </body>
